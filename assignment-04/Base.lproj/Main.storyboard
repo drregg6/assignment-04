@@ -19,23 +19,23 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="cj2-9w-x2F" userLabel="background">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="130" translatesAutoresizingMaskIntoConstraints="NO" id="M7i-7A-30h">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="M7i-7A-30h">
                                 <rect key="frame" x="30" y="59" width="333" height="759"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="fHc-Bw-Gso">
-                                        <rect key="frame" x="89" y="0.0" width="155" height="213.33333333333334"/>
+                                        <rect key="frame" x="89" y="0.0" width="155" height="233"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="story story story" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyC-bz-snM" userLabel="storyLabel">
-                                        <rect key="frame" x="98.666666666666657" y="343.33333333333331" width="136" height="20.333333333333314"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="story story story" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyC-bz-snM" userLabel="storyLabel">
+                                        <rect key="frame" x="40" y="263" width="253" height="233"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="Vv3-j6-GOp" userLabel="BottomStack">
-                                        <rect key="frame" x="129" y="493.66666666666663" width="75" height="265.33333333333337"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vv3-j6-GOp" userLabel="BottomStack">
+                                        <rect key="frame" x="30" y="526" width="273" height="233"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh1-uM-IwU">
-                                                <rect key="frame" x="0.0" y="0.0" width="75" height="60.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="273" height="71"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button">
                                                     <backgroundConfiguration key="background">
@@ -44,7 +44,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDH-8T-a88">
-                                                <rect key="frame" x="0.0" y="102.33333333333339" width="75" height="60.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="81" width="273" height="71"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button">
                                                     <backgroundConfiguration key="background">
@@ -53,7 +53,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vph-k2-eBd">
-                                                <rect key="frame" x="0.0" y="205" width="75" height="60.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="162" width="273" height="71"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button">
                                                     <backgroundConfiguration key="background">
@@ -64,19 +64,26 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Vv3-j6-GOp" secondAttribute="trailing" constant="30" id="3xi-ce-Ohl"/>
+                                    <constraint firstItem="fyC-bz-snM" firstAttribute="leading" secondItem="M7i-7A-30h" secondAttribute="leading" constant="40" id="9bI-ZL-ISC"/>
+                                    <constraint firstAttribute="trailing" secondItem="fyC-bz-snM" secondAttribute="trailing" constant="40" id="TQm-wa-DQM"/>
+                                    <constraint firstItem="Vv3-j6-GOp" firstAttribute="leading" secondItem="M7i-7A-30h" secondAttribute="leading" constant="30" id="Y6B-1v-VUQ"/>
+                                    <constraint firstItem="fyC-bz-snM" firstAttribute="height" secondItem="fHc-Bw-Gso" secondAttribute="height" id="flw-kz-9jO"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M7i-7A-30h" secondAttribute="bottom" id="4rk-5b-HOX"/>
-                            <constraint firstItem="cj2-9w-x2F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="S29-Hu-QDz"/>
-                            <constraint firstAttribute="bottom" secondItem="cj2-9w-x2F" secondAttribute="bottom" id="SFx-vw-pyS"/>
-                            <constraint firstItem="M7i-7A-30h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="aAa-vL-W8n"/>
-                            <constraint firstItem="cj2-9w-x2F" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="e2D-5y-w04"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M7i-7A-30h" secondAttribute="trailing" constant="30" id="m4n-QL-ev7"/>
-                            <constraint firstItem="M7i-7A-30h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nmg-Un-1ga"/>
-                            <constraint firstItem="cj2-9w-x2F" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="ymm-3x-7nc"/>
+                            <constraint firstItem="cj2-9w-x2F" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="A0f-D8-hmw"/>
+                            <constraint firstItem="M7i-7A-30h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Hxk-iY-kiF"/>
+                            <constraint firstItem="M7i-7A-30h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NzU-2b-nbC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M7i-7A-30h" secondAttribute="bottom" id="YIV-33-vX3"/>
+                            <constraint firstItem="cj2-9w-x2F" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="f0J-Pm-gCW"/>
+                            <constraint firstAttribute="bottom" secondItem="cj2-9w-x2F" secondAttribute="bottom" id="gol-vk-kKV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M7i-7A-30h" secondAttribute="trailing" constant="30" id="jEo-KU-aRI"/>
+                            <constraint firstItem="cj2-9w-x2F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nqb-od-3ST"/>
                         </constraints>
                     </view>
                 </viewController>
