@@ -42,6 +42,9 @@
                                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </backgroundConfiguration>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="optionPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M79-bd-S3t"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDH-8T-a88">
                                                 <rect key="frame" x="0.0" y="81" width="273" height="71"/>
@@ -51,6 +54,9 @@
                                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </backgroundConfiguration>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="optionPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gsn-M5-EEe"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vph-k2-eBd">
                                                 <rect key="frame" x="0.0" y="162" width="273" height="71"/>
@@ -60,6 +66,9 @@
                                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </backgroundConfiguration>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="optionPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gAX-Y7-dIK"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -86,6 +95,13 @@
                             <constraint firstItem="cj2-9w-x2F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nqb-od-3ST"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="background" destination="cj2-9w-x2F" id="XQF-69-VH6"/>
+                        <outlet property="optionOne" destination="gh1-uM-IwU" id="Bt7-pa-AYg"/>
+                        <outlet property="optionThree" destination="Vph-k2-eBd" id="kgW-Q5-r41"/>
+                        <outlet property="optionTwo" destination="jDH-8T-a88" id="W2W-1A-hPh"/>
+                        <outlet property="storyLabel" destination="fyC-bz-snM" id="Que-Vc-Crw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

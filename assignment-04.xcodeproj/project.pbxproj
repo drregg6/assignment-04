@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD3721C029930B720031E8A3 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3721BF29930B710031E8A3 /* Story.swift */; };
+		FD3721C229930B830031E8A3 /* StoryLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3721C129930B830031E8A3 /* StoryLogic.swift */; };
 		FDB269D62992E11300FF1903 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB269D52992E11300FF1903 /* AppDelegate.swift */; };
 		FDB269D82992E11300FF1903 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB269D72992E11300FF1903 /* SceneDelegate.swift */; };
 		FDB269DA2992E11300FF1903 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB269D92992E11300FF1903 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD3721BF29930B710031E8A3 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		FD3721C129930B830031E8A3 /* StoryLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryLogic.swift; sourceTree = "<group>"; };
 		FDB269D22992E11300FF1903 /* assignment-04.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "assignment-04.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB269D52992E11300FF1903 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDB269D72992E11300FF1903 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,15 +60,33 @@
 		FDB269D42992E11300FF1903 /* assignment-04 */ = {
 			isa = PBXGroup;
 			children = (
+				FDB269EA299308B100FF1903 /* Model */,
+				FDB269E9299308A800FF1903 /* View */,
 				FDB269D52992E11300FF1903 /* AppDelegate.swift */,
 				FDB269D72992E11300FF1903 /* SceneDelegate.swift */,
-				FDB269D92992E11300FF1903 /* ViewController.swift */,
 				FDB269DB2992E11300FF1903 /* Main.storyboard */,
 				FDB269DE2992E11500FF1903 /* Assets.xcassets */,
 				FDB269E02992E11500FF1903 /* LaunchScreen.storyboard */,
 				FDB269E32992E11500FF1903 /* Info.plist */,
 			);
 			path = "assignment-04";
+			sourceTree = "<group>";
+		};
+		FDB269E9299308A800FF1903 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDB269D92992E11300FF1903 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FDB269EA299308B100FF1903 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD3721BF29930B710031E8A3 /* Story.swift */,
+				FD3721C129930B830031E8A3 /* StoryLogic.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +162,9 @@
 			files = (
 				FDB269DA2992E11300FF1903 /* ViewController.swift in Sources */,
 				FDB269D62992E11300FF1903 /* AppDelegate.swift in Sources */,
+				FD3721C229930B830031E8A3 /* StoryLogic.swift in Sources */,
 				FDB269D82992E11300FF1903 /* SceneDelegate.swift in Sources */,
+				FD3721C029930B720031E8A3 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
