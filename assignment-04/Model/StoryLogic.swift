@@ -84,12 +84,16 @@ struct StoryLogic {
         return storyLevel
     }
     
+    func getMaxLevel() -> Int {
+        return 2
+    }
+    
     func getStoryIndex() -> Int {
         return storyIndex
     }
     
     mutating func setLevel() {
-        if storyLevel >= 2 {
+        if storyLevel >= getMaxLevel() {
             storyLevel = 0
         } else {
             storyLevel += 1

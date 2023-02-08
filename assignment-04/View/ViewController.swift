@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         let index = storyLogic.getOptionIndex(str: optionText)
 
         storyLogic.setLevel()
-        if (storyLogic.getLevel() > 2) {
+        if (storyLogic.getLevel() > storyLogic.getMaxLevel()) {
             updateUI(0)
         } else {
             updateUI(index)
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     func updateUI(_ i: Int = 0) {
         storyLogic.setStoryIndex(o: i)
         
-        if (storyLogic.getLevel() > 2) {
+        if (storyLogic.getLevel() > storyLogic.getMaxLevel()) {
             optionOne.isHidden = true
             optionTwo.isHidden = true
         } else {
