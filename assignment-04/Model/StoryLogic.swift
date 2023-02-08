@@ -4,92 +4,131 @@
 //
 //  Created by Dave Regg on 2/7/23.
 //
+// A new label based on whether story is over or not
+// Reset button to reset CYO adventure
 
 import Foundation
 
 struct StoryLogic {
-    var storyIndex : Int = 0
+    var storyLevel = 0
+    var storyIndex = 0
     
     let story = [
             Story("Won The Lotto",
                      "Invest in Business Venture",
                      "Buying Spree",
-                     "Save the Money"),
+                     "Save the Money",
+                 1,
+                 2,
+                 3),
             Story("Invest in Business Venture",
                      "Fancy Restaurant",
                      "Tech Startup",
-                     "Buy an NBA Team"),
+                     "Buy an NBA Team",
+                 4,
+                 5,
+                 6),
             Story("Buying Spree",
                      "Mansion",
                      "Boat",
-                     "Gifts"),
+                     "Gifts",
+                 7,
+                 8,
+                 9),
             Story("Save the Money",
                      "Hoard It",
                      "Donate It",
-                     "Give to Family and Friends"),
+                     "Give to Family and Friends",
+                 10,
+                 11,
+                 12),
             Story("Fancy Restaurant",
-                     "Story Story",
-                     "nil",
-                     "nil"),
+                     "",
+                     "",
+                     "Reset"),
             Story("Tech Startup",
-                     "Story Story",
-                     "nil",
-                     "nil"),
+                     "",
+                     "",
+                     "Reset"),
             Story("Buy an NBA Team",
-                      "Story Story",
-                      "nil",
-                      "nil"),
+                      "",
+                      "",
+                      "Reset"),
             Story("Mansion",
-                      "Story Story",
-                      "nil",
-                      "nil"),
+                      "",
+                      "",
+                      "Reset"),
             Story("Boat",
-                      "Story Story",
-                      "nil",
-                      "nil"),
+                      "",
+                      "",
+                      "Reset"),
             Story("Gifts for Friends",
-                      "Story Story",
-                      "nil",
-                      "nil"),
+                      "",
+                      "",
+                      "Reset"),
             Story("Hoard It",
-                      "Story Story",
-                      "nil",
-                      "nil"),
+                      "",
+                      "",
+                      "Reset"),
             Story("Donate It",
-                      "Story Story",
-                      "nil",
-                      "nil"),
+                      "",
+                      "",
+                      "Reset"),
             Story("Give to Family and Friends",
-                      "Story Story",
-                      "nil",
-                      "nil")
+                      "",
+                      "",
+                      "Reset")
         ]
     
-    mutating func increaseIndex() {
-        if storyIndex < story.count - 1 {
-            storyIndex += 1
+    func getLevel() -> Int {
+        return storyLevel
+    }
+    
+    func getStoryIndex() -> Int {
+        return storyIndex
+    }
+    
+    mutating func setLevel() {
+        if storyLevel >= 2 {
+            storyLevel = 0
         } else {
-            storyIndex = 0
+            storyLevel += 1
         }
     }
     
-    func getNextPage() -> String {
-        return story[storyIndex].story_text
+    mutating func setStoryIndex(o: Int) {
+        storyIndex = o
     }
     
-    func getOptionOne() -> String {
-        return story[storyIndex].option_one
+    mutating func getStoryText(o: Int) -> String {
+        return story[o].story_text
     }
     
-    func getOptionTwo() -> String {
-        return story[storyIndex].option_two
+    func getOptionOne(o: Int) -> String {
+        return story[o].option_one
     }
     
-    func getOptionThree() -> String {
-        return story[storyIndex].option_three
+    func getOptionTwo(o: Int) -> String {
+        return story[o].option_two
     }
     
-    func getImageName() -> Int {
-        return storyIndex + 1
+    func getOptionThree(o: Int) -> String {
+        return story[o].option_three
+    }
+    
+    func getImageName(o: Int) -> Int {
+        return o
+    }
+    
+    mutating func getOptionIndex(str: String) -> Int {
+        if str == story[storyIndex].option_one {
+            storyIndex = story[storyIndex].o_one_i
+        } else if str == story[storyIndex].option_two {
+            storyIndex = story[storyIndex].o_two_i
+        } else {
+            storyIndex = story[storyIndex].o_three_i
+        }
+        
+        return storyIndex
     }
 }
