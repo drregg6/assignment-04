@@ -39,12 +39,12 @@ class ViewController: UIViewController {
     func updateUI(_ i: Int = 0) {
         storyLogic.setStoryIndex(o: i)
         
-        if (storyLogic.getLevel() > storyLogic.getMaxLevel()) {
-            optionOne.isHidden = true
-            optionTwo.isHidden = true
+        if (storyLogic.getLevel() < storyLogic.getMaxLevel()) {
+            optionOne.isUserInteractionEnabled = true
+            optionTwo.isUserInteractionEnabled = true
         } else {
-            optionOne.isHidden = false
-            optionTwo.isHidden = false
+            optionOne.isUserInteractionEnabled = false
+            optionTwo.isUserInteractionEnabled = false
         }
         
         // update text

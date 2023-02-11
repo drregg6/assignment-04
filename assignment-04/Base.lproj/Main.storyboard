@@ -39,9 +39,10 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="story story story" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyC-bz-snM" userLabel="storyLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyC-bz-snM" userLabel="storyLabel">
                                         <rect key="frame" x="40" y="263" width="253" height="233"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <string key="text">What do those kids say these days? YOLO - You've only got once to live? Something like that. I just want to spend, spend, spend! I should really have some kind of big, huge, enormous, amazing purchase for myself... or a load of small gifts for my friends, family, former co-workers, acquintances, fashion models, celebrities, y'know, all the people that I want to impress. What should I do?</string>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
