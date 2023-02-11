@@ -19,38 +19,38 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="cj2-9w-x2F" userLabel="background">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="M7i-7A-30h">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="M7i-7A-30h">
                                 <rect key="frame" x="30" y="59" width="333" height="759"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ZS5-XU-KJ1" userLabel="TopStack">
-                                        <rect key="frame" x="30" y="0.0" width="273" height="233"/>
+                                        <rect key="frame" x="30" y="0.0" width="273" height="243"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="fHc-Bw-Gso">
-                                                <rect key="frame" x="0.0" y="10" width="120" height="213.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="15" width="120" height="213.33333333333334"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="T58-H8-pae"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Lotto Spree" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="4" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ie1-QV-EOU" userLabel="titleLabel">
-                                                <rect key="frame" x="145" y="73.666666666666657" width="128" height="86"/>
+                                                <rect key="frame" x="145" y="78.666666666666657" width="128" height="86"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyC-bz-snM" userLabel="storyLabel">
-                                        <rect key="frame" x="40" y="263" width="253" height="233"/>
-                                        <string key="text">What do those kids say these days? YOLO - You've only got once to live? Something like that. I just want to spend, spend, spend! I should really have some kind of big, huge, enormous, amazing purchase for myself... or a load of small gifts for my friends, family, former co-workers, acquintances, fashion models, celebrities, y'know, all the people that I want to impress. What should I do?</string>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyC-bz-snM" userLabel="storyLabel">
+                                        <rect key="frame" x="40" y="258" width="253" height="243"/>
+                                        <mutableString key="text">You won the lottery just in time to invest in your favorite NBA teams - the Boston Celtics just went up for sale! The initial asking price is $4.5 billion, but you're able to get a group of investors to help you make a bid and you eventually win and you become to majority owner. Unfortunately, you have no idea how to run an NBA team and you run the team into the ground. Not only that, but you cut corners on EVERYTHING in order to turn a profit, making the fans turn on you. When you show up to the arena for $6 Hotdog night, the fans chase you down and make it $6 Millionaire night instead.</mutableString>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vv3-j6-GOp" userLabel="BottomStack">
-                                        <rect key="frame" x="30" y="526" width="273" height="233"/>
+                                        <rect key="frame" x="30" y="516" width="273" height="243"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh1-uM-IwU">
-                                                <rect key="frame" x="0.0" y="0.0" width="273" height="71"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="273" height="74.333333333333329"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <backgroundConfiguration key="background">
@@ -69,7 +69,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDH-8T-a88">
-                                                <rect key="frame" x="0.0" y="81" width="273" height="71"/>
+                                                <rect key="frame" x="0.0" y="84.333333333333371" width="273" height="74.333333333333314"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <backgroundConfiguration key="background">
@@ -88,7 +88,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vph-k2-eBd">
-                                                <rect key="frame" x="0.0" y="162" width="273" height="71"/>
+                                                <rect key="frame" x="0.0" y="168.66666666666663" width="273" height="74.333333333333314"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <backgroundConfiguration key="background">
